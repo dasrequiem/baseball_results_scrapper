@@ -11,6 +11,24 @@ import time
 DOWNLOAD_FOLDER = './pdf/'
 DRIVER_FOLDER = '/Users/aruki/code/chromedriver'
 RESULTS_URL = 'https://fedebeis.com.pa/boxscore-juvenil-2020/'
+CSV_NAME = 'results.csv'
+
+# dump the list of games and download links to a csv file
+
+
+def make_csv_file(results, file=CSV_NAME, echo=False):
+    with open(file, 'a') as f:
+        headers = 'match, result_link, download_link\n'
+        if echo:
+            print(headers + '\n')
+        f.write(headers)
+
+        for result in results:
+            line = result.getValuesCSV() + '\n'
+            if echo:
+                print(line)
+            f.write(line)
+
 
 # chrome options for download
 prefs = {
@@ -42,7 +60,7 @@ while loop:
 
     # next_button = driver.find_element_by_class_name('next-posts')
     loop = not ('pagination-disabled' in next_button.get_attribute('class'))
-    print(next_button.get_attribute('class') + ' | ' + str(loop))
+    #print(next_button.get_attribute('class') + ' | ' + str(loop))
 
     results = driver.find_elements_by_xpath("//li/h3/a")
     print(' {} results in page {} !'.format(str(len(results)), cont))
@@ -80,5 +98,6 @@ for partido in partidos:
         print('Encountered an issue downloading results for {}'.format(partido.titulo))
         # traceback.print_exc()
 
+make_csv_file(partidos, 'results_minor_league_2020.csv', True)
 
 driver.quit()

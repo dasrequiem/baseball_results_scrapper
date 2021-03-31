@@ -7,3 +7,6 @@ class game:
         self.titulo = titulo
         self.link = link
         self.download_link = ''
+
+    def getValuesCSV(self):
+        return '{},{},{}'.format(self.titulo, self.link, self.download_link)
