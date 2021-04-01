@@ -1,11 +1,11 @@
-from results_scrapper import downloadGameResults, getChromeDriver
+from results_scrapper import downloadGameResults, getChromeDriver, make_csv_file
 import csv
 from game import Game
 
 
-def download_results(links):
+def downloadResults(links):
     driver = getChromeDriver()
-    downloadGameResults(driver, links)
+    return downloadGameResults(driver, links)
 
 
 if __name__ == '__main__':
@@ -24,4 +24,5 @@ if __name__ == '__main__':
                 match_list.append(match)
 
     if len(match_list) > 0:
-        download_results(match_list)
+        updated_list = downloadResults(match_list)
+        make_csv_file(match_list, FILE + 'second_download.csv', True)

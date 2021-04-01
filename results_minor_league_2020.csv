@@ -26,8 +26,8 @@ match,result_link,download_link,downloaded
 19 – Oeste vs Este,https://fedebeis.com.pa/19-oeste-vs-este/,https://fedebeis.com.pa/wp-content/uploads/2020/02/19.pdf,True
 18 – Coclé vs Chiriquí,https://fedebeis.com.pa/18-cocle-vs-chiriqui/,https://fedebeis.com.pa/wp-content/uploads/2020/02/18.pdf,True
 17 – OEste vs Este,https://fedebeis.com.pa/17-oeste-vs-este/,https://fedebeis.com.pa/wp-content/uploads/2020/02/17.pdf,True
-16 – Los Santos vs Metro,https://fedebeis.com.pa/16-los-santos-vs-metro/,,False
-15 – Herrera vs Veraguas,https://fedebeis.com.pa/15-herrera-vs-veraguas/,https://fedebeis.com.pa/wp-content/uploads/2020/02/15.pdf,True
+16 – Los Santos vs Metro,https://fedebeis.com.pa/16-los-santos-vs-metro/,https://fedebeis.com.pa/wp-content/uploads/2020/02/16.pdf,True
+15 – Herrera vs Veraguas,https://fedebeis.com.pa/15-herrera-vs-veraguas/,,False
 14 – Coclé vs Chiriquí,https://fedebeis.com.pa/14-cocle-vs-chiriqui/,https://fedebeis.com.pa/wp-content/uploads/2020/02/14.pdf,True
 13 – Oeste vs Este,https://fedebeis.com.pa/13-oeste-vs-este/,https://fedebeis.com.pa/wp-content/uploads/2020/02/13.pdf,True
 12 – Los Santos vs Metro,https://fedebeis.com.pa/12-los-santos-vs-metro/,https://fedebeis.com.pa/wp-content/uploads/2020/02/12.pdf,True
@@ -48,7 +48,7 @@ match,result_link,download_link,downloaded
 132 – Los Santos vs Chiriquí,https://fedebeis.com.pa/132-los-santos-vs-chiriqui/,https://fedebeis.com.pa/wp-content/uploads/2020/01/132.pdf,True
 131 – Metro vs Occidente,https://fedebeis.com.pa/131-metro-vs-occidente/,https://fedebeis.com.pa/wp-content/uploads/2020/01/131.pdf,True
 130 – Herrera vs Oeste,https://fedebeis.com.pa/130-herrera-vs-oeste/,https://fedebeis.com.pa/wp-content/uploads/2020/01/130.pdf,True
-129 – Colón vs Veraguas,https://fedebeis.com.pa/129-colon-vs-veraguas/,,False
+129 – Colón vs Veraguas,https://fedebeis.com.pa/129-colon-vs-veraguas/,https://fedebeis.com.pa/wp-content/uploads/2020/01/129.pdf,True
 128 – Darién vs Coclé,https://fedebeis.com.pa/128-darien-vs-cocle/,https://fedebeis.com.pa/wp-content/uploads/2020/01/128.pdf,True
 127 – Este vs Bocas del Toro,https://fedebeis.com.pa/127-este-vs-bocas-del-toro/,https://fedebeis.com.pa/wp-content/uploads/2020/01/127.pdf,True
 126 – Metro vs Chiriquí,https://fedebeis.com.pa/126-metro-vs-chiriqui/,https://fedebeis.com.pa/wp-content/uploads/2020/01/126-Corregido.pdf,True
@@ -101,11 +101,11 @@ match,result_link,download_link,downloaded
 78 – Chiriquí vs Darién,https://fedebeis.com.pa/78-chiriqui-vs-darien/,https://fedebeis.com.pa/wp-content/uploads/2020/01/78.pdf,True
 77 – Occidente vs Herrera,https://fedebeis.com.pa/77-occidente-vs-herrera/,https://fedebeis.com.pa/wp-content/uploads/2020/01/77.pdf,True
 76 – Coclé vs Este,https://fedebeis.com.pa/76-cocle-vs-este/,https://fedebeis.com.pa/wp-content/uploads/2020/01/76.pdf,True
-75 – Los Santos vs Oeste,https://fedebeis.com.pa/75-los-santos-vs-oeste/,,False
-74 – Veraguas vs Metro,https://fedebeis.com.pa/74-veraguas-vs-metro/,,False
-73 – Bocas del Toro vs Colón,https://fedebeis.com.pa/73-bocas-del-toro-vs-colon/,,False
-72 – Bocas del Toro vs Herrera,https://fedebeis.com.pa/72-bocas-del-toro-vs-herrera/,,False
-71 – Occidente vs Darién,https://fedebeis.com.pa/71-occidente-vs-darien/,,False
+75 – Los Santos vs Oeste,https://fedebeis.com.pa/75-los-santos-vs-oeste/,https://fedebeis.com.pa/wp-content/uploads/2020/01/75.pdf,True
+74 – Veraguas vs Metro,https://fedebeis.com.pa/74-veraguas-vs-metro/,https://fedebeis.com.pa/wp-content/uploads/2020/01/74.pdf,True
+73 – Bocas del Toro vs Colón,https://fedebeis.com.pa/73-bocas-del-toro-vs-colon/,https://fedebeis.com.pa/wp-content/uploads/2020/01/73.pdf,True
+72 – Bocas del Toro vs Herrera,https://fedebeis.com.pa/72-bocas-del-toro-vs-herrera/,https://fedebeis.com.pa/wp-content/uploads/2020/01/72.pdf,True
+71 – Occidente vs Darién,https://fedebeis.com.pa/71-occidente-vs-darien/,https://fedebeis.com.pa/wp-content/uploads/2020/01/71.pdf,True
 70 – Veraguas vs Este,https://fedebeis.com.pa/70-veraguas-vs-este/,https://fedebeis.com.pa/wp-content/uploads/2020/01/70.pdf,True
 68 – Los Santos vs Metro,https://fedebeis.com.pa/68-los-santos-vs-metro/,https://fedebeis.com.pa/wp-content/uploads/2020/01/68.pdf,True
 69 – Coclé vs Oeste,https://fedebeis.com.pa/69-cocle-vs-oeste/,https://fedebeis.com.pa/wp-content/uploads/2020/01/69.pdf,True
@@ -129,7 +129,7 @@ match,result_link,download_link,downloaded
 50 – Chiriquí vs Coclé,https://fedebeis.com.pa/50-chiriqui-vs-cocle/,https://fedebeis.com.pa/wp-content/uploads/2020/01/50.pdf,True
 49 – Veraguas vs Darién,https://fedebeis.com.pa/49-veraguas-vs-darien/,https://fedebeis.com.pa/wp-content/uploads/2020/01/49.pdf,True
 48 – Herrera vs Este,https://fedebeis.com.pa/48-herrera-vs-este/,https://fedebeis.com.pa/wp-content/uploads/2020/01/48.pdf,True
-47 – Metro vs Colón,https://fedebeis.com.pa/47-metro-vs-colon/,https://fedebeis.com.pa/wp-content/uploads/2020/01/47.pdf,True
+47 – Metro vs Colón,https://fedebeis.com.pa/47-metro-vs-colon/,,False
 46 – Veraguas vs Coclé,https://fedebeis.com.pa/46-veraguas-vs-cocle/,https://fedebeis.com.pa/wp-content/uploads/2020/01/46-1.pdf,True
 45 – Occidente vs Este,https://fedebeis.com.pa/45-occidente-vs-este/,https://fedebeis.com.pa/wp-content/uploads/2020/01/45.pdf,True
 44 – Colón vs Oeste,https://fedebeis.com.pa/44-colon-vs-oeste/,https://fedebeis.com.pa/wp-content/uploads/2020/01/44.pdf,True
