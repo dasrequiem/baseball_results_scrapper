@@ -11,14 +11,14 @@ import time
 DOWNLOAD_FOLDER = './pdf/'
 DRIVER_FOLDER = '/Users/aruki/code/chromedriver'
 RESULTS_URL = 'https://fedebeis.com.pa/boxscore-juvenil-2020/'
-CSV_NAME = 'results.csv'
+CSV_NAME = 'results_minor_league_2020.csv'
 
 # dump the list of games and download links to a csv file
 
 
 def make_csv_file(results, file=CSV_NAME, echo=False):
     with open(file, 'a') as f:
-        headers = 'match, result_link, download_link\n'
+        headers = 'match, result_link, download_link, downloaded\n'
         if echo:
             print(headers + '\n')
         f.write(headers)
@@ -85,16 +85,19 @@ total = len(partidos)
 for partido in partidos:
     print('Downloading game result {}/{} {}'.format(str(cont),
           str(total), partido.titulo))
-    cont += 1
-    driver.get(partido.link)
-    time.sleep(2)
-    # if not ('P.Pospuesto' in partido.titulo):
     try:
+        cont += 1
+        driver.get(partido.link)
+        time.sleep(2)
+        # if not ('P.Pospuesto' in partido.titulo):
+
         download = driver.find_element_by_class_name('s_pdf_download_link')
         partido.download_link = download.get_attribute('href')
         driver.get(download.get_attribute('href'))
+        partido.downloaded = True
     except:
         partido.download_link = ''
+        partido.downloaded = False
         print('Encountered an issue downloading results for {}'.format(partido.titulo))
         # traceback.print_exc()
 
