@@ -1,4 +1,4 @@
-class game:
+class Game:
     titulo = ''
     link = ''
     download_link = ''

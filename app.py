@@ -12,7 +12,7 @@ if __name__ == '__main__':
 
     driver.get(RESULTS_URL)
 
-    # we get the game links
+    # we get the Game links
     partidos = getMatchLinks(driver)
 
     # download the pdf files

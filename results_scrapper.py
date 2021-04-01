@@ -3,13 +3,13 @@ from selenium.webdriver.common.by import By
 from selenium.webdriver.support.ui import WebDriverWait
 from selenium.webdriver.support import expected_conditions as EC
 from selenium.webdriver.chrome.options import Options
-from game import game
+from game import Game
 import traceback
 import time
 
 
 # returns the configured chrome web driver (the download folder is not working properly. Downloads to default)
-def getChromeDriver(driver_location, download_folder):
+def getChromeDriver(driver_location='/Users/aruki/code/chromedriver', download_folder='./pdf/'):
     # chrome options for download
     prefs = {
         "download.default_directory": download_folder,
@@ -24,7 +24,7 @@ def getChromeDriver(driver_location, download_folder):
     return driver
 
 
-# navigate website to gather the game match links
+# navigate website to gather the Game match links
 def getMatchLinks(webdriver):
     # find the button for next pagination
     next_button = webdriver.find_element_by_xpath(
@@ -49,7 +49,7 @@ def getMatchLinks(webdriver):
         print(' {} results in page {} !'.format(str(len(results)), cont))
 
         for result in results:
-            partido = game(result.text, result.get_attribute('href'))
+            partido = Game(result.text, result.get_attribute('href'))
             partidos.append(partido)
 
         if loop:
@@ -71,7 +71,7 @@ def downloadGameResults(webdriver, partidos):
 
     # we loop through the gathered download links
     for partido in partidos:
-        print('Downloading game result {}/{} {}'.format(str(cont),
+        print('Downloading Game result {}/{} {}'.format(str(cont),
                                                         str(total), partido.titulo))
         try:
             cont += 1
@@ -93,7 +93,7 @@ def downloadGameResults(webdriver, partidos):
 
     return partidos
 
-# dump the list of games and download links to a csv file
+# dump the list of Games and download links to a csv file
 
 
 def make_csv_file(results, file='results.csv', echo=False):
